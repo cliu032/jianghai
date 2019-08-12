@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # jianghai
 
 ## Project setup
@@ -28,6 +27,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# jianghai
->>>>>>> 2c2f70383263a583e9366bcb23a2d8541ac3868b
