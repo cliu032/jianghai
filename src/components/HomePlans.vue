@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'HomePlans'
+};
+</script>
+
 <template>
     <v-container grid-list-lg>
         <v-layout row>
@@ -70,12 +76,6 @@
         </v-layout>
     </v-container>
 </template>
-
-<script>
-export default {
-    name: 'HomePlans'
-};
-</script>
 
 <style scoped>
 </style>

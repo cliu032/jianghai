@@ -1,6 +1,23 @@
+<script>
+export default {
+    name: 'AppNavigation',
+    data() {
+        return {
+            appTitle: 'JiangHai',
+            isShowDrawer: false,
+            items: [
+                { title: 'Menu' },
+                { title: 'Sign In' },
+                { title: 'Join' }
+            ]
+        };
+    }
+};
+</script>
+
 <template>
     <span>
-        <v-navigation-drawer app v-model="drawer" class="grey darken-3" dark disable-resize-watcher>
+        <v-navigation-drawer app v-model="isShowDrawer" class="grey darken-3" dark disable-resize-watcher>
             <v-list>
                 <template v-for="(item, index) in items">
                     <v-list-tile :key="index">
@@ -13,7 +30,7 @@
             </v-list>
         </v-navigation-drawer>
         <v-toolbar app color="grey darken-4" dark>
-            <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-side-icon class="hidden-md-and-up" @click="isShowDrawer = !isShowDrawer"></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>{{appTitle}}</v-toolbar-title>
             <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
@@ -24,21 +41,5 @@
     </span>
 </template>
 
-<script>
-export default {
-    name: 'AppNavigation',
-    data() {
-        return {
-            appTitle: 'Jianghai',
-            drawer: false,
-            items: [
-                { title: 'Menu' },
-                { title: 'Sign In' },
-                { title: 'Join' }
-            ]
-        };
-    }
-};
-</script>
-
-<style scoped></style>
+<style scoped>
+</style>
