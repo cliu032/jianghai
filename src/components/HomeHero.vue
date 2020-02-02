@@ -19,16 +19,15 @@ export default {
     <v-container fluid fill-height class="home-hero" :style="{ backgroundImage: `url(${image})` }">
         <v-layout justify-center align-center column pa-5>
             <div class="home-hero--banner jianghai--color__background">
-                <!-- <img src="assets/logo.png"> -->
                 <div
-                    class="display-4 font-weight-black jianghai--text__heading text-xs-center"
+                    class="display-3 font-weight-black jianghai--text__heading text-xs-center"
                 >
-                    {{ text1 }}
+                    JINAGHAI
                 </div>
                 <div
-                    class="display-4 font-weight-black jianghai--text__heading text-xs-center mb-3"
+                    class="display-3 font-weight-black jianghai--text__heading text-xs-center mb-3"
                 >
-                    {{ text2 }}
+                    CONSTRUCTION
                 </div>
                 <div
                     class="display-1 font-weight-bold jianghai--text__subheading text-xs-center"
@@ -36,9 +35,6 @@ export default {
                     FACADE | ALUMINIUM | BALUSTRADE
                 </div>
             </div>
-            <!-- <v-btn fab class="mt-5 grey darken-4">
-                <v-icon large color="white">expand_more</v-icon>
-            </v-btn> -->
         </v-layout>
     </v-container>
 </template>
@@ -48,7 +44,7 @@ export default {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .home-hero--banner {

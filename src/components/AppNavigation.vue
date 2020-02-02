@@ -17,12 +17,18 @@ export default {
 
 <template>
     <span>
-        <v-navigation-drawer app v-model="isShowDrawer" class="grey darken-3" dark disable-resize-watcher>
+        <v-navigation-drawer
+            app
+            v-model="drawer"
+            class="grey darken-3"
+            dark
+            disable-resize-watcher
+        >
             <v-list>
                 <template v-for="(item, index) in items">
                     <v-list-tile :key="index">
                         <v-list-tile-content>
-                            {{item.title}}
+                            {{ item.title }}
                         </v-list-tile-content>
                     </v-list-tile>
                     <v-divider :key="`divider-${index}`"></v-divider>
@@ -30,9 +36,12 @@ export default {
             </v-list>
         </v-navigation-drawer>
         <v-toolbar app color="grey darken-4" dark>
-            <v-toolbar-side-icon class="hidden-md-and-up" @click="isShowDrawer = !isShowDrawer"></v-toolbar-side-icon>
+            <v-toolbar-side-icon
+                class="hidden-md-and-up"
+                @click="drawer = !drawer"
+            ></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
-            <v-toolbar-title>{{appTitle}}</v-toolbar-title>
+            <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
             <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
             <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
@@ -41,5 +50,17 @@ export default {
     </span>
 </template>
 
-<style scoped>
-</style>
+<script>
+export default {
+    name: 'AppNavigation',
+    data() {
+        return {
+            appTitle: 'Jianghai',
+            drawer: false,
+            items: [{ title: 'Menu' }, { title: 'Sign In' }, { title: 'Join' }]
+        };
+    }
+};
+</script>
+
+<style scoped></style>
