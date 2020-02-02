@@ -1,22 +1,45 @@
 <template>
     <v-container>
         <v-layout column>
-            <v-flex  class="display-2 text-xs-center my-5">Big Title Goes Here</v-flex>
+            <v-flex class="display-2 text-xs-center my-5">About Us</v-flex>
             <v-flex>
-                <div class="headline mt-3">Lorem ipsum</div>
-                <p class="subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar risus quis mauris interdum, in euismod nibh pretium. Etiam pulvinar tincidunt dapibus. Quisque sollicitudin, mauris a consequat consectetur, turpis nisl sollicitudin enim, id consectetur neque neque nec metus. Pellentesque dolor nisi, vulputate quis lobortis ac, tincidunt et quam. Mauris pulvinar blandit nisi nec mattis. Aliquam accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a, pulvinar ac libero.</p>
+                <div class="headline mt-3">Facade Installers</div>
+                <p class="subheading mt-3">
+                    Jiang Hai Construction Pty Ltd install facades on buildings
+                    and constructions. Our company was established in 2014 to
+                    provide professional facade installation contracting
+                    service. Jiang Hai is recognised in the Australian market as
+                    facade installers of great integrity and high quality work.
+                    Jiang Hai is installer for some of the best Global and
+                    Australian aluminium curtain wall manufacturers.
+                </p>
             </v-flex>
             <v-flex>
-                <div class="headline mt-3">Lorem ipsum</div>
-                <p class="subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar risus quis mauris interdum, in euismod nibh pretium. Etiam pulvinar tincidunt dapibus. Quisque sollicitudin, mauris a consequat consectetur, turpis nisl sollicitudin enim, id consectetur neque neque nec metus. Pellentesque dolor nisi, vulputate quis lobortis ac, tincidunt et quam. Mauris pulvinar blandit nisi nec mattis. Aliquam accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a, pulvinar ac libero.</p>
-
-                <p class="subheading mt-3">Nullam nec massa eu est fringilla lobortis. Praesent in enim in justo blandit varius. Cras placerat arcu in sapien rhoncus aliquet. Sed interdum tortor et tincidunt condimentum. Etiam consequat mi leo, in suscipit odio scelerisque molestie. Nam et purus consequat, iaculis augue vel, sagittis ligula. Vestibulum aliquet vulputate erat. Phasellus id mauris mauris. Nunc a maximus dolor. Curabitur ut vestibulum arcu. Curabitur non lacus justo. Cras varius a magna in semper. Nulla eros ante, consectetur faucibus sapien eu, rhoncus imperdiet dui. Sed viverra iaculis nunc, id pulvinar massa egestas vitae.</p>
-
-                <p class="subheading mt-3">Aenean erat metus, imperdiet eget nisl laoreet, venenatis ultricies ante. In interdum ante vel dictum ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sit amet gravida diam. Aliquam in tempor metus. Fusce pellentesque pharetra sem, et luctus justo tempor dictum. Ut feugiat est sed tristique egestas. Nullam posuere a nunc in blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse laoreet ultrices eros, nec malesuada enim semper sit amet. Maecenas efficitur consectetur accumsan. Etiam in aliquam turpis, ut pharetra nulla. Vestibulum malesuada, nulla id elementum cursus, nibh dui rhoncus felis, suscipit mattis felis enim sed ex. Pellentesque scelerisque aliquam lorem, vel mattis nibh tincidunt ac. Suspendisse ac nibh sit amet lacus ullamcorper maximus.</p>
+                <div class="headline mt-3">Our Specialisation</div>
+                <p class="subheading mt-3">
+                    Our company specialises in aluminium curtain wall
+                    installation, architectural cladding, windows and doors,
+                    shopfronts, alucobond &amp; composite panels, fiber cement
+                    products, any specialised facade work and labour hire
+                    services to the building and construction industry.
+                </p>
+                <p class="subheading mt-3">
+                    Our profession team consists of site management/supervision,
+                    EWP operators, spotter, labourers ensuring workplace facade
+                    installation methods are in place. Our staff are fully
+                    ticketed to meet industry standards and practice.
+                </p>
             </v-flex>
             <v-flex>
-                <div class="headline mt-3">Lorem ipsum</div>
-                <p class="subheading mt-3">Nullam nec massa eu est fringilla lobortis. Praesent in enim in justo blandit varius. Cras placerat arcu in sapien rhoncus aliquet. Sed interdum tortor et tincidunt condimentum. Etiam consequat mi leo, in suscipit odio scelerisque molestie. Nam et purus consequat, iaculis augue vel, sagittis ligula. Vestibulum aliquet vulputate erat. Phasellus id mauris mauris. Nunc a maximus dolor. Curabitur ut vestibulum arcu. Curabitur non lacus justo. Cras varius a magna in semper. Nulla eros ante, consectetur faucibus sapien eu, rhoncus imperdiet dui. Sed viverra iaculis nunc, id pulvinar massa egestas vitae.</p>
+                <div class="headline mt-3">
+                    Our Reputation
+                </div>
+                <p class="subheading mt-3">
+                    Jiang Hai has developed a great reputation of working with
+                    clients on site requirements and uses the latest facade
+                    installation methods and machinery to erect unitized curtain
+                    walls.
+                </p>
             </v-flex>
         </v-layout>
     </v-container>
@@ -28,5 +51,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
