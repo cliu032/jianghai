@@ -1,19 +1,28 @@
 <template>
-    <v-container fluid fill-height class="home-hero">
+    <v-container
+        fluid
+        fill-height
+        class="home-hero"
+        :style="{ backgroundImage: `url(${image})` }"
+    >
         <v-layout justify-center align-center column pa-5>
-            <div class="home-hero--banner jianghai--color__background">
+            <div
+                class="home-hero--banner jianghai--color__background ml-3 mr-3"
+            >
+                <v-img
+                    :src="require('../assets/logo_vert_dark.png')"
+                    max-height="125"
+                    max-width="90vw"
+                    contain
+                    class="mt-2 mb-3 ml-auto mr-auto"
+                ></v-img>
                 <div
-                    class="display-3 font-weight-black jianghai--text__heading text-xs-center"
-                >
-                    JINAGHAI
-                </div>
-                <div
-                    class="display-3 font-weight-black jianghai--text__heading text-xs-center mb-3"
-                >
-                    CONSTRUCTION
-                </div>
-                <div
-                    class="display-1 font-weight-bold jianghai--text__subheading text-xs-center"
+                    class="jianghai--text__light text-xs-center"
+                    :class="{
+                        'jianghai--text__heandline_xs':
+                            $vuetify.breakpoint.xsOnly,
+                        'jianghai--text__headline': $vuetify.breakpoint.smAndUp
+                    }"
                 >
                     FACADE | ALUMINIUM | BALUSTRADE
                 </div>
@@ -24,20 +33,31 @@
 
 <script>
 export default {
-    name: 'HomeHero'
+    name: 'HomeHero',
+    props: {
+        text1: {
+            type: String
+        },
+        text2: {
+            type: String
+        },
+        image: {
+            type: String
+        }
+    }
 };
 </script>
 
 <style scoped>
 .home-hero {
-    background: url('../assets/WcigmQHg.jpg');
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
 
 .home-hero--banner {
     width: 100vw;
-    padding: 5vh 0;
+    padding: 12px 0;
 }
 </style>

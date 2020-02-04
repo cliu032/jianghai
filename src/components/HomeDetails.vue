@@ -1,12 +1,22 @@
+<script>
+export default {
+    name: 'HomeDetails'
+};
+</script>
+
 <template>
-    <v-container>
+    <v-container id="about">
         <v-layout column>
-            <v-flex class="display-2 text-xs-center my-5">About Us</v-flex>
+            <v-flex class="display-2 text-xs-center my-5"
+                >About Jiang Hai</v-flex
+            >
             <v-flex>
-                <div class="headline mt-3">Facade Installers</div>
+                <div class="headline text-xs-center mt-3">
+                    Facade Installers
+                </div>
                 <p class="subheading mt-3">
-                    Jiang Hai Construction Pty Ltd install facades on buildings
-                    and constructions. Our company was established in 2014 to
+                    Jiang Hai Construction install facades on buildings and
+                    constructions. Our company was established in 2014 to
                     provide professional facade installation contracting
                     service. Jiang Hai is recognised in the Australian market as
                     facade installers of great integrity and high quality work.
@@ -15,7 +25,9 @@
                 </p>
             </v-flex>
             <v-flex>
-                <div class="headline mt-3">Our Specialisation</div>
+                <div class="headline text-xs-center mt-3">
+                    Our Specialisation
+                </div>
                 <p class="subheading mt-3">
                     Our company specialises in aluminium curtain wall
                     installation, architectural cladding, windows and doors,
@@ -23,7 +35,7 @@
                     products, any specialised facade work and labour hire
                     services to the building and construction industry.
                 </p>
-                <p class="subheading mt-3">
+                <p class="subheading  mt-3">
                     Our profession team consists of site management/supervision,
                     EWP operators, spotter, labourers ensuring workplace facade
                     installation methods are in place. Our staff are fully
@@ -31,7 +43,7 @@
                 </p>
             </v-flex>
             <v-flex>
-                <div class="headline mt-3">
+                <div class="headline text-xs-center mt-3">
                     Our Reputation
                 </div>
                 <p class="subheading mt-3">
