@@ -1,20 +1,3 @@
-<script>
-export default {
-    name: 'AppNavigation',
-    data() {
-        return {
-            appTitle: 'JiangHai',
-            isShowDrawer: false,
-            items: [
-                { title: 'Menu' },
-                { title: 'Sign In' },
-                { title: 'Join' }
-            ]
-        };
-    }
-};
-</script>
-
 <template>
     <span>
         <v-navigation-drawer
@@ -42,10 +25,29 @@ export default {
             ></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
-            <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
-            <v-btn color="grey darken-3" class="hidden-sm-and-down">JOIN</v-btn>
+            <template v-for="(item, index) in items">
+                <v-btn
+                    v-if="index !== items.length - 1"
+                    :key="index"
+                    flat
+                    class="hidden-sm-and-down"
+                >
+                    <a :href="`#${item.href}`" class="noDecoration">{{
+                        item.title
+                    }}</a>
+                </v-btn>
+                <v-btn
+                    v-if="index === items.length - 1"
+                    :key="index"
+                    color="grey darken-3"
+                    class="hidden-sm-and-down"
+                >
+                    <a :href="`#${item.href}`" class="noDecoration">{{
+                        item.title
+                    }}</a>
+                </v-btn>
+            </template>
         </v-toolbar>
     </span>
 </template>
@@ -55,9 +57,13 @@ export default {
     name: 'AppNavigation',
     data() {
         return {
-            appTitle: 'Jianghai',
+            appTitle: 'Jiang Hai Construction',
             drawer: false,
-            items: [{ title: 'Menu' }, { title: 'Sign In' }, { title: 'Join' }]
+            items: [
+                { title: 'Company', href: 'about' },
+                { title: 'Projects', href: 'projects' },
+                { title: 'Contact Us', href: 'contact' }
+            ]
         };
     }
 };

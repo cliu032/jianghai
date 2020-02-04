@@ -1,6 +1,5 @@
 import '@babel/polyfill';
 import Vue from 'vue';
-import './plugins/vuetify'
 import './plugins/vuetify';
 import App from './App.vue';
 import router from './router';
@@ -12,7 +11,7 @@ import htmlSerializer from './prismic/html-serializer';
 Vue.config.productionTip = false;
 
 Vue.use(PrismicVue, {
-    endpoint: window.prismic.endpoint,
+    endpoint: 'https://jianghai.prismic.io/api/v2',
     linkResolver,
     htmlSerializer
 });
