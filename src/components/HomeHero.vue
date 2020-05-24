@@ -24,7 +24,7 @@
                         'jianghai--text__headline': $vuetify.breakpoint.smAndUp
                     }"
                 >
-                    FACADE | ALUMINIUM | BALUSTRADE
+                    {{ text1 }}
                 </div>
             </div>
         </v-layout>
@@ -35,15 +35,8 @@
 export default {
     name: 'HomeHero',
     props: {
-        text1: {
-            type: String
-        },
-        text2: {
-            type: String
-        },
-        image: {
-            type: String
-        }
+        text1: String,
+        image: String
     }
 };
 </script>

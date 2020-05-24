@@ -21,7 +21,8 @@ export default {
                 button_link: null,
                 button_label: null
             },
-            slices: []
+            slices: [],
+            projects: []
         };
     },
     methods: {
@@ -44,6 +45,18 @@ export default {
                     this.$router.push({ name: 'not-found' });
                 }
             });
+            this.$prismic.client.getSingle('project')
+                .then(document => {
+                    if (document) {
+                        this.projects = document.data.projectlist.map(project => {
+                            return {
+                                title: this.$prismic.richTextAsPlain(project.title),
+                                content: this.$prismic.richTextAsPlain(project.content),
+                                image: project.image.url
+                            }
+                        });
+                    }
+                });
         }
     },
     created() {
@@ -53,30 +66,15 @@ export default {
 </script>
 
 <template>
-        <span>
-            <home-hero
-              :text1="$prismic.richTextAsPlain(fields.title)"
-              :image="this.fields.image"
-            ></home-hero>
-            <home-details></home-details>
-            <home-plans></home-plans>
-      <!-- <section class="homepage">
-          <section
-              class="homepage-banner"
-              :style="{
-                  backgroundImage:
-                      'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(' +
-                      fields.image +
-                      ')'
-              }"
-          >
-              <div class="banner-content container">
-                  <h2 class="banner-title">
-                      {{ $prismic.richTextAsPlain(fields.title) }}
-                  </h2>
-              </div>
-          </section>
-      </section> -->
+    <span>
+        <home-hero
+            :text1="$prismic.richTextAsPlain(fields.tagline)"
+            :image="fields.image"
+        ></home-hero>
+        <home-details></home-details>
+        <home-plans
+            :projects="projects"
+        ></home-plans>
     </span>
 </template>
 
