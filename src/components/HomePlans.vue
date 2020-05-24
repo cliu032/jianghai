@@ -6,96 +6,35 @@
             >
         </v-layout>
         <v-layout row wrap>
-            <v-flex xs12 sm12 md4>
+            <v-flex
+                v-for="(project, index) in projects"
+                :key="index"
+                xs12
+                sm12
+                md4
+            >
                 <v-card>
-                    <v-img
-                        :src="require('../assets/projects/ultimo.jpg')"
-                        height="500px"
-                    >
-                        <v-container fill-height fluid>
+                    <v-img :src="project.image" height="400">
+                        <!-- <v-container fill-height fluid>
                             <v-layout fill-height>
                                 <v-flex xs12 align-end flexbox>
-                                    <span class="headline white--text"
-                                        >Harbour Mill House</span
-                                    >
+                                    <span class="headline white--text">{{
+                                        project.title
+                                    }}</span>
                                 </v-flex>
                             </v-layout>
-                        </v-container>
+                        </v-container> -->
                     </v-img>
-                    <v-card-title primary-title>
+                    <!-- <v-card-title primary-title>
                         <div>
-                            <h3 class="headline mb-0">Harbour Mill House</h3>
+                            <h3 class="headline mb-0">
+                                {{ project.title }}
+                            </h3>
                             <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nullam mauris felis, varius
-                                rutrum massa a, dignissim ornare dui. Cras eget
-                                velit eu dui tristique lobortis sit amet vel
-                                tellus.
+                                {{ project.content }}
                             </div>
                         </div>
-                    </v-card-title>
-                </v-card>
-            </v-flex>
-
-            <v-flex xs12 sm12 md4>
-                <v-card>
-                    <v-img
-                        :src="require('../assets/projects/project2.jpg')"
-                        height="500px"
-                    >
-                        <v-container fill-height fluid>
-                            <v-layout fill-height>
-                                <v-flex xs12 align-end flexbox>
-                                    <span class="headline white--text"
-                                        >Project 2</span
-                                    >
-                                </v-flex>
-                            </v-layout>
-                        </v-container>
-                    </v-img>
-                    <v-card-title primary-title>
-                        <div>
-                            <h3 class="headline mb-0">Project 2</h3>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nullam mauris felis, varius
-                                rutrum massa a, dignissim ornare dui. Cras eget
-                                velit eu dui tristique lobortis sit amet vel
-                                tellus.
-                            </div>
-                        </div>
-                    </v-card-title>
-                </v-card>
-            </v-flex>
-
-            <v-flex xs12 sm12 md4>
-                <v-card>
-                    <v-img
-                        :src="require('../assets/projects/project3.jpg')"
-                        height="500px"
-                    >
-                        <v-container fill-height fluid>
-                            <v-layout fill-height>
-                                <v-flex xs12 align-end flexbox>
-                                    <span class="headline white--text"
-                                        >Project 3</span
-                                    >
-                                </v-flex>
-                            </v-layout>
-                        </v-container>
-                    </v-img>
-                    <v-card-title primary-title>
-                        <div>
-                            <h3 class="headline mb-0">Project 3</h3>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nullam mauris felis, varius
-                                rutrum massa a, dignissim ornare dui. Cras eget
-                                velit eu dui tristique lobortis sit amet vel
-                                tellus.
-                            </div>
-                        </div>
-                    </v-card-title>
+                    </v-card-title> -->
                 </v-card>
             </v-flex>
         </v-layout>
@@ -104,7 +43,10 @@
 
 <script>
 export default {
-    name: 'HomePlans'
+    name: 'HomePlans',
+    props: {
+        projects: Array
+    }
 };
 </script>
 
