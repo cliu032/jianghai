@@ -7,11 +7,11 @@ export default {
 <template>
     <v-container id="about">
         <v-layout column>
-            <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5"
+            <v-flex xs12 class="text-center display-1 font-weight-black my-5"
                 >About Jiang Hai</v-flex
             >
             <v-flex>
-                <div class="headline text-xs-center mt-3">
+                <div class="headline text-center mt-3">
                     Facade Installers
                 </div>
                 <p class="subheading mt-3">
@@ -25,7 +25,7 @@ export default {
                 </p>
             </v-flex>
             <v-flex>
-                <div class="headline text-xs-center mt-3">
+                <div class="headline text-center mt-3">
                     Our Specialisation
                 </div>
                 <p class="subheading mt-3">
@@ -43,7 +43,7 @@ export default {
                 </p>
             </v-flex>
             <v-flex>
-                <div class="headline text-xs-center mt-3">
+                <div class="headline text-center mt-3">
                     Our Reputation
                 </div>
                 <p class="subheading mt-3">

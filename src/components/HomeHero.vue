@@ -17,7 +17,7 @@
                     class="mt-2 mb-3 ml-auto mr-auto"
                 ></v-img>
                 <div
-                    class="jianghai--text__light text-xs-center"
+                    class="jianghai--text__light text-center"
                     :class="{
                         'jianghai--text__heandline_xs':
                             $vuetify.breakpoint.xsOnly,

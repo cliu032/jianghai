@@ -1,14 +1,16 @@
 <template>
     <v-container id="contact">
-        <v-layout column>
-            <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5"
+        <v-row>
+            <v-flex xs12 class="text-center display-1 font-weight-black my-5"
                 >Contact Us</v-flex
             >
-        </v-layout>
-        <v-layout justify-center>
-            <v-flex
-                xs12
-                md5
+        </v-row>
+        <v-row justify="center">
+            <v-col
+                cols="8"
+                offset="1"
+                lg="5"
+                offset-lg="0"
                 class="jianghai--text__title jianghai--text__secondary"
             >
                 <v-container>
@@ -33,44 +35,25 @@
                         </v-flex>
                     </v-layout>
                 </v-container>
-            </v-flex>
-            <v-flex xs12 md4>
-                <v-form ref="form" v-model="valid" lazy-validation>
-                    <v-text-field
-                        v-model="name"
-                        :rules="nameRules"
-                        label="Name"
-                    ></v-text-field>
-                    <v-text-field
-                        v-model="email"
-                        :rules="emailRules"
-                        label="E-mail *"
-                        required
-                    ></v-text-field>
-                    <v-text-field
-                        v-model="phone"
-                        :rules="phoneRules"
-                        label="Phone *"
-                        required
-                    ></v-text-field>
-                    <v-textarea v-model="message" required>
+            </v-col>
+            <v-col cols="7" lg="4">
+                <v-form ref="form">
+                    <v-text-field label="Name"></v-text-field>
+                    <v-text-field label="E-mail *" required></v-text-field>
+                    <v-text-field label="Phone *" required></v-text-field>
+                    <v-textarea required>
                         <template v-slot:label>
                             <div>Message *</div>
                         </template>
                     </v-textarea>
-                    <v-btn
-                        :disabled="false"
-                        color="#c6a877"
-                        class="mr-4"
-                        @click="validate"
-                    >
+                    <v-btn :disabled="false" color="#c6a877" class="mr-4">
                         <div class="jianghai--text__secondary">
                             Send us a message
                         </div>
                     </v-btn>
                 </v-form>
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 

@@ -1,20 +1,23 @@
 <template>
-    <v-container id="projects" grid-list-lg>
-        <v-layout row>
-            <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5"
-                >Projects</v-flex
+    <v-container id="projects">
+        <v-row>
+            <v-col class="text-center display-1 font-weight-black my-5"
+                >Projects</v-col
             >
-        </v-layout>
-        <v-layout row wrap>
-            <v-flex
+        </v-row>
+        <v-row>
+            <v-col
                 v-for="(project, index) in projects"
                 :key="index"
-                xs12
-                sm12
-                md4
+                cols="6"
+                md="4"
             >
-                <v-card>
-                    <v-img :src="project.image" height="400">
+                <v-card flat tile class="d-flex">
+                    <v-img
+                        :src="`${project.image}&h=600`"
+                        :lazy-src="`${project.image}&w=4&h=4`"
+                        height="300"
+                    >
                         <v-container fill-height fluid bottom-shade>
                             <v-layout flex-column justify-end align-start>
                                 <span
@@ -33,10 +36,22 @@
                                 </span>
                             </v-layout>
                         </v-container>
+                        <template v-slot:placeholder>
+                            <v-row
+                                class="fill-height ma-0"
+                                align="center"
+                                justify="center"
+                            >
+                                <v-progress-circular
+                                    indeterminate
+                                    color="grey lighten-5"
+                                ></v-progress-circular>
+                            </v-row>
+                        </template>
                     </v-img>
                 </v-card>
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 

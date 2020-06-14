@@ -12,9 +12,9 @@ export default {
 <template>
     <v-app>
         <app-navigation></app-navigation>
-        <v-content class="body-content" transition="slide-x-transition">
+        <v-main class="body-content" transition="slide-x-transition">
             <router-view></router-view>
-        </v-content>
+        </v-main>
     </v-app>
 </template>
 
@@ -71,7 +71,7 @@ export default {
 
 .noDecoration {
     text-decoration: none;
-    color: unset;
+    color: #fff;
 }
 
 .flex-column {
