@@ -7,10 +7,9 @@
         </v-row>
         <v-row justify="center">
             <v-col
-                cols="8"
-                offset="1"
-                lg="5"
-                offset-lg="0"
+                cols="12"
+                sm="8"
+                md="6"
                 class="jianghai--text__title jianghai--text__secondary"
             >
                 <v-container>
@@ -36,7 +35,7 @@
                     </v-layout>
                 </v-container>
             </v-col>
-            <v-col cols="7" lg="4">
+            <v-col cols="12" sm="7" md="5">
                 <v-form ref="form">
                     <v-text-field label="Name"></v-text-field>
                     <v-text-field label="E-mail *" required></v-text-field>
