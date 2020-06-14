@@ -9,7 +9,7 @@
             <v-col
                 v-for="(project, index) in projects"
                 :key="index"
-                cols="6"
+                sm="6"
                 md="4"
             >
                 <v-card flat tile class="d-flex">
