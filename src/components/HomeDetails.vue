@@ -7,7 +7,7 @@ export default {
 <template>
     <v-container id="about">
         <v-layout column>
-            <v-flex class="display-2 text-xs-center my-5"
+            <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5"
                 >About Jiang Hai</v-flex
             >
             <v-flex>

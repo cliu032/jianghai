@@ -22,6 +22,11 @@ export default {
 @import url('assets/fonts/frutiger.css');
 @import url('assets/fonts/bebasneue.css');
 
+.jianghai--text {
+    font-family: 'Frutiger';
+    font-size: 1.3em;
+}
+
 .jianghai--text__headline {
     font-family: 'Frutiger';
     letter-spacing: 4px;
@@ -36,6 +41,20 @@ export default {
 
 .jianghai--text__light {
     color: #fff;
+}
+
+.jianghai--text__main {
+    color: #c6a877;
+}
+
+.jianghai--text__secondary {
+    color: #303030;
+}
+
+.jianghai--text__title {
+    font-family: 'Frutiger';
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .jianghai--color__background {
@@ -53,5 +72,13 @@ export default {
 .noDecoration {
     text-decoration: none;
     color: unset;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.bottom-shade {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 25%);
 }
 </style>

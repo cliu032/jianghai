@@ -15,26 +15,25 @@
             >
                 <v-card>
                     <v-img :src="project.image" height="400">
-                        <!-- <v-container fill-height fluid>
-                            <v-layout fill-height>
-                                <v-flex xs12 align-end flexbox>
-                                    <span class="headline white--text">{{
-                                        project.title
-                                    }}</span>
-                                </v-flex>
+                        <v-container fill-height fluid bottom-shade>
+                            <v-layout flex-column justify-end align-start>
+                                <span
+                                    class="jianghai--text__title jianghai--text__light mb-1"
+                                >
+                                    {{ project.title }}
+                                </span>
+                                <span
+                                    v-if="project.content.length > 0"
+                                    class="jianghai--text jianghai--text__light"
+                                >
+                                    <v-icon dark class="mr-1" size="1.1em">
+                                        fas fa-map-marker-alt
+                                    </v-icon>
+                                    {{ project.content }}
+                                </span>
                             </v-layout>
-                        </v-container> -->
+                        </v-container>
                     </v-img>
-                    <!-- <v-card-title primary-title>
-                        <div>
-                            <h3 class="headline mb-0">
-                                {{ project.title }}
-                            </h3>
-                            <div>
-                                {{ project.content }}
-                            </div>
-                        </div>
-                    </v-card-title> -->
                 </v-card>
             </v-flex>
         </v-layout>
