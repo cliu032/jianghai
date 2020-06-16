@@ -5,13 +5,15 @@ export default {
 </script>
 
 <template>
-    <v-container id="about">
-        <v-layout column>
-            <v-flex class="display-2 text-xs-center my-5"
-                >About Jiang Hai</v-flex
-            >
-            <v-flex>
-                <div class="headline text-xs-center mt-3">
+    <v-container id="about" pt-8>
+        <v-row>
+            <v-col class="text-center display-1 font-weight-black my-3">
+                About Jiang Hai
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <div class="headline text-center mt-3">
                     Facade Installers
                 </div>
                 <p class="subheading mt-3">
@@ -23,9 +25,11 @@ export default {
                     Jiang Hai is installer for some of the best Global and
                     Australian aluminium curtain wall manufacturers.
                 </p>
-            </v-flex>
-            <v-flex>
-                <div class="headline text-xs-center mt-3">
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <div class="headline text-center mt-3">
                     Our Specialisation
                 </div>
                 <p class="subheading mt-3">
@@ -41,9 +45,11 @@ export default {
                     installation methods are in place. Our staff are fully
                     ticketed to meet industry standards and practice.
                 </p>
-            </v-flex>
-            <v-flex>
-                <div class="headline text-xs-center mt-3">
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <div class="headline text-center mt-3">
                     Our Reputation
                 </div>
                 <p class="subheading mt-3">
@@ -52,8 +58,8 @@ export default {
                     installation methods and machinery to erect unitized curtain
                     walls.
                 </p>
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 

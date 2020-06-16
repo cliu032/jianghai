@@ -3,13 +3,17 @@
 import HomeHero from '@/components/HomeHero';
 import HomeDetails from '@/components/HomeDetails';
 import HomePlans from '@/components/HomePlans';
+import HomeContact from '@/components/HomeContact';
+import AppFooter from '@/components/Footer';
 
 export default {
     name: 'home',
     components: {
         HomeHero,
         HomeDetails,
-        HomePlans
+        HomePlans,
+        HomeContact,
+        AppFooter
     },
     data() {
         return {
@@ -75,6 +79,8 @@ export default {
         <home-plans
             :projects="projects"
         ></home-plans>
+        <home-contact></home-contact>
+        <app-footer></app-footer>
     </span>
 </template>
 
