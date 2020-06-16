@@ -1,7 +1,7 @@
 <template>
-    <v-container id="projects">
+    <v-container id="projects" pt-8>
         <v-row>
-            <v-col class="text-center display-1 font-weight-black my-5"
+            <v-col class="text-center display-1 font-weight-black my-3"
                 >Projects</v-col
             >
         </v-row>

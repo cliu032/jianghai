@@ -11,7 +11,9 @@
                 <template v-for="(item, index) in items">
                     <v-list-item :key="index">
                         <v-list-item-content>
-                            {{ item.title }}
+                            <a :href="`#${item.href}`" class="noDecoration">
+                                {{ item.title }}
+                            </a>
                         </v-list-item-content>
                     </v-list-item>
                     <v-divider :key="`divider-${index}`"></v-divider>
