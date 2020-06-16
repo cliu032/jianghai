@@ -1,5 +1,5 @@
 <template>
-    <v-container id="contact">
+    <v-container id="contact" mb-4>
         <v-row>
             <v-flex xs12 class="text-center display-1 font-weight-black my-5"
                 >Contact Us</v-flex
